@@ -1,4 +1,4 @@
-// This GAME Developed By Souvik Ghosh.
+//This Game Developed By Souvik Ghosh.(06-10-2022)
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
@@ -31,6 +31,7 @@ int game_play()
 	int c_ch, u_ch;
 	
 	fflush(stdin);	
+	label1:
 	printf("\n\n ENTER YOUR CHOICE: ");
 	scanf("%d", &u_ch);
 	
@@ -45,6 +46,11 @@ int game_play()
 	else if(u_ch == 3)
 	{
 		printf("\n\n Your Choice SCISSORS\n");
+	}
+	else
+	{
+		printf(" INVALID CHOICE...");
+		goto label1;
 	}
 	
 	fflush(stdin);	
